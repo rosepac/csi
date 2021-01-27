@@ -42,17 +42,17 @@ Resumen de comandos básicos utilizados en Unix.
 
 - [Aprendiendo Linux (100 Ejercicios)](https://www.cesareox.com/docencia/apuntes/linux/)
 
-#### Páginas con Ejercicios Interactivos
-
-- [Webminal](https://www.webminal.org/terminal/)
-
-![](https://i.ibb.co/hsw0GDc/image.png)
-
 ### Comandos Básicos Páginas Web de Apoyo
 
 - [Chuleta Comandos Linux](https://cheatography.com/crakernano/cheat-sheets/linux-shell/)
 - [Chuleta Comandos Linux 2](https://cheatography.com/grysbernkastel/cheat-sheets/comandos-linux/)
 - [CheatSheet - 400 comandos para GNU/Linux](https://www.blackploit.com/2013/05/cheatsheet-comandos-para-GNU-Linux.html)
+
+#### Páginas con Ejercicios Interactivos
+
+- [Webminal](https://www.webminal.org/terminal/)
+
+![](https://i.ibb.co/hsw0GDc/image.png)
 
 ## DISCOS DUROS
 
@@ -71,13 +71,13 @@ ide1 = primario esclavo = hdb
 
 Para dispositivos SCSI o discos SATA es similar a `/dev/sda` o `/dev/scdb`
 
-### Más sobre discos duros
+#### Más sobre discos duros
 
 - [Tipos de dispositivos](https://www.linuxtotal.com.mx/index.php?cont=info_admon_005)
 - [Unidades de disco en Linux: Particiones lógicas y primarias](http://www.estrellateyarde.org/archivos-y-directorios-en-linux/unidades-de-disco-en-linux)
 - [Particiones y sistemas de archivos en Linux](http://www.aquihayapuntes.com/particiones-y-sistemas-de-archivos-en-linux.html)
 
-### Particiones de disco duro
+#### Particiones de disco duro
 
 > **Fuente**: [Región de Murcia](http://www.carm.es/edu/pub/04_2015/2_5_2_contenido.html#:~:text=Partici%C3%B3n%20extendida.,en%20un%20solo%20disco%20f%C3%ADsico.)
 
@@ -227,46 +227,46 @@ Puedes aprender más en nuestra [sección de Linux](https://www.galisteocantero.
 
 Particionado de un disco en formato GPT a través del programa PARTED.
 
-`$ sudo su`
-`$ password`
-`$ fdisk –l`: Ver los discos que existen en el sistema.
-`$ parted /dev/sdd`: para entrar en el disco que quiero hacer las particiones
-`(parted)- mklabel gpt`
+- `$ sudo su`
+- `$ password`
+- `$ fdisk –l`: Ver los discos que existen en el sistema.
+- `$ parted /dev/sdd`: para entrar en el disco que quiero hacer las particiones
+- `(parted)- mklabel gpt`
 
-#### 1ªPARTICIÓN
+#### 1 PARTICIÓN
 
-(parted)- mkpart: poner nombre (Juanjo 1)
-Tipo de sistema de ficheros? ext4
-¿Inicio? 1 ----ponemos donde empezara la 1ª partición
-¿fin? 301
+- (parted)- mkpart: poner nombre (Juanjo 1)
+- Tipo de sistema de ficheros? ext4
+- ¿Inicio? 1 ----ponemos donde empezara la 1ª partición
+- ¿fin? 301
 
-#### 2ªPARTICIÓN
+### 2 PARTICIÓN
 
-(parted)- mkpart: poner nombre (Juanjo 2)
-Tipo de sistema de ficheros? ext4
-¿Inicio? 301 –Es el fin de la 1ª y comienzo de la 2ª
-¿fin? 501
+- (parted)- mkpart: poner nombre (Juanjo 2)
+- Tipo de sistema de ficheros? ext4
+- ¿Inicio? 301 –Es el fin de la 1ª y comienzo de la 2ª
+- ¿fin? 501
 
-#### 3ªPARTICIÓN
+### 3 PARTICIÓN
 
-(parted)- mkpart: poner nombre (Juanjo 3)
-Tipo de sistema de ficheros? ext4
-¿Inicio? 501 –Es el fin de la 2ª y el inicio del la 3ª
-¿fin? 1101
+- (parted)- mkpart: poner nombre (Juanjo 3)
+- Tipo de sistema de ficheros? ext4
+- ¿Inicio? 501 –Es el fin de la 2ª y el inicio del la 3ª
+- ¿fin? 1101
 
-#### 4ªPARTICIÓN
+### 4 PARTICIÓN
 
-(parted)- mkpart: poner nombre (Juanjo 4)
-Tipo de sistema de ficheros? ext4
-¿Inicio? 1101 - Fin de la 3ª y comienzo de la 4ª
-¿fin? 100%: Se pone % para que sea todo el resto.
+- (parted)- mkpart: poner nombre (Juanjo 4)
+- Tipo de sistema de ficheros? ext4
+- ¿Inicio? 1101 - Fin de la 3ª y comienzo de la 4ª
+- ¿fin? 100%: Se pone % para que sea todo el resto.
 
-###  Y así con todas las particiones que queramos hacer
+### Así con todas las particiones que queramos hacer
 
-`(parted)- quit`: para volver al modo root o `Cntrl+Z / Cntrl+C` para interrumpir el proceso.
-`$ root@juanjo-virtual-machine:/home/juanjo# fdisk –l`: para ver el listado de
+- `(parted)- quit`: para volver al modo root o `Cntrl+Z / Cntrl+C` para interrumpir el proceso.
+- `$ root@juanjo-virtual-machine:/home/juanjo# fdisk –l`: para ver el listado de
 discos con sus particiones.
-`root@juanjo-virtual-machine:/home/juanjo# lsblk –fm`: para ver el formato
+- `root@juanjo-virtual-machine:/home/juanjo# lsblk –fm`: para ver el formato
 de los discos con sus particiones.
 
 ### Enlaces Parted
