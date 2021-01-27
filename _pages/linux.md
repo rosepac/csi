@@ -1,44 +1,10 @@
 ---
 title: "Linux"
 toc: true
-toc_sticky: true
+toc_sticky: false
 permalink: /linux/
 layout: single
 ---
-
-## LINUX, DISCOS DUROS, MÁQUINAS VIRTUALES 👀
-
-- [LINUX, DISCOS DUROS, MÁQUINAS VIRTUALES 👀](#linux-discos-duros-máquinas-virtuales-)
-- [COMANDOS BÁSICOS DE LINUX](#comandos-básicos-de-linux)
-  - [Comandos de Información del Sistema](#comandos-de-información-del-sistema)
-  - [Comandos de Directorios - Creación de Carpetas - Etc](#comandos-de-directorios---creación-de-carpetas---etc)
-  - [Aprendizaje y Práctica de Comandos Básicos](#aprendizaje-y-práctica-de-comandos-básicos)
-    - [Páginas con Ejercicios Interactivos](#páginas-con-ejercicios-interactivos)
-  - [Comandos Básicos Páginas Web de Apoyo](#comandos-básicos-páginas-web-de-apoyo)
-- [DISCOS DUROS](#discos-duros)
-  - [Discos duros en Linux](#discos-duros-en-linux)
-    - [Discos duros IDE](#discos-duros-ide)
-    - [Discos duros SATA](#discos-duros-sata)
-  - [Más sobre discos duros](#más-sobre-discos-duros)
-  - [Particiones de disco duro](#particiones-de-disco-duro)
-  - [Instalar GPARTED](#instalar-gparted)
-  - [Crear Particiones con GPARTED](#crear-particiones-con-gparted)
-- [FDISK: Cómo crear particiones en Linux desde la consola](#fdisk-cómo-crear-particiones-en-linux-desde-la-consola)
-- [PARTED: Comandos](#parted-comandos)
-    - [1ªPARTICIÓN](#1ªpartición)
-    - [2ªPARTICIÓN](#2ªpartición)
-    - [3ªPARTICIÓN](#3ªpartición)
-    - [4ªPARTICIÓN](#4ªpartición)
-  - [Y así con todas las particiones que queramos hacer.](#y-así-con-todas-las-particiones-que-queramos-hacer)
-  - [Enlaces Parted](#enlaces-parted)
-- [Montar Particiones](#montar-particiones)
-  - [Paso 1º: Damos formato a cada una de las particiones anteriores](#paso-1º-damos-formato-a-cada-una-de-las-particiones-anteriores)
-  - [Paso 2º: Crear Carpetas](#paso-2º-crear-carpetas)
-    - [Modo 1](#modo-1)
-    - [Modo 2](#modo-2)
-  - [Parte 3º: Ejecutar el montaje](#parte-3º-ejecutar-el-montaje)
-  - [Parte 4º: Comprobar el montaje](#parte-4º-comprobar-el-montaje)
-  - [Parte 5º: Desmontar una partición](#parte-5º-desmontar-una-partición)
 
 ## COMANDOS BÁSICOS DE LINUX
 

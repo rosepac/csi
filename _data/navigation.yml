@@ -1,11 +1,11 @@
 # main links
 main:
+  - title: "Linux"
+    url: /linux/
   - title: "Redes"
     url: /redes/
   - title: "Seguridad"
     url: /seguridad/
-  - title: "Linux"
-    url: /linux/
   # - title: "Sitemap"
   #   url: /sitemap/
   # title: "Quick-Start Guide"
