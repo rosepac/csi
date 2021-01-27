@@ -5,7 +5,7 @@ permalink: /
 hidden: true
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_image: /assets/imagenes/plantilla/mm-home-page-feature.jpg
   actions:
     - label: "<i class='fas fa-download'></i> Install now"
       url: "/docs/quick-start-guide/"
@@ -13,27 +13,27 @@ excerpt: >
   A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
   <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.21.0">Latest release v4.21.0</a></small>
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
-    alt: "customizable"
-    title: "Super customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-    url: "/docs/configuration/"
+  - image_path: /assets/imagenes/plantilla/mm-customizable-feature.png
+    alt: "redes"
+    title: "Redes"
+    excerpt: "Contenidos de Cisco, montaje y gestión de redes."
+    url: "/redes/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
+    btn_label: "Leer Más"
+  - image_path: /assets/imagenes/plantilla/mm-responsive-feature.png
+    alt: "Linux"
+    title: "Linux"
+    excerpt: "Comandos: Manejo e implementación de los comandos básicos de Linux."
+    url: "/linux/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-free-feature.png
-    alt: "100% free"
-    title: "100% free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
+    btn_label: "Leer Más"
+  - image_path: /assets/imagenes/plantilla/mm-free-feature.png
+    alt: "Seguridad"
+    title: "Seguridad"
+    excerpt: "Otros Contenidos 😜"
+    url: "/seguridad/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"      
+    btn_label: "Leer Más"      
 ---
 
 {% include feature_row %}
