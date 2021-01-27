@@ -45,7 +45,8 @@ feature_row:
     excerpt: "Creación de Máquinas Virtuales desde Cero."
     url: "/maquinas-virtuales/"
     btn_class: "btn--primary"
-    btn_label: "Leer Más"
+    btn_label: "Leer Más"  
+
 ---
 
 {% include feature_row %}

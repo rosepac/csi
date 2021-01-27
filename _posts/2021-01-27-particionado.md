@@ -5,130 +5,23 @@ toc_sticky: true
 permalink: /particionado/
 ---
 
-## COMANDOS BÁSICOS DE LINUX
+**¿Cómo crear particiones en Linux?**
 
-Resumen de comandos básicos utilizados en Unix.
+A continuación, vamos a explicar 3 formas diferentes de crear particiones en un sistema operativo de Unix.
 
-### Comandos de Información del Sistema
-
-`date`:   nos da la fecha del sistema
-`cal`:    nos da el calendario del mes
-`df`:     los datos de las unidades de disco
-`free`:   memoria ram
-`pwd`:    donde estamos situados en el sistema
-
-
-`cat /etc/*release`: ver la distribución del sistema
-`cat /etc/issue`: ver la distribución del sistema
-`man comando`: manual de informaciÓn sobre los comandos
-
-### Comandos de Directorios - Creación de Carpetas - Etc
-
-`cd ..`:  hacia atrás en el directorio
-`cd RutaAMostrar`: nos movemos hacia la ruta indicada
-`./`: directorio actual
-`mkdir`: creación de carpetas
-
-`mkdir {carpeta1, carpeta2}`: varias carpetas
-`mkdir /carpeta1/carpeta2`: varias carpetas unas dentro de otras.
-
-`touch`: nos permite crear un archivo vacío
-
-`rmdir`: borrar directorio
-`rm`: borrar archivo
-
-### Aprendizaje y Práctica de Comandos Básicos
-
-- [Aprendiendo Linux (100 Ejercicios)](https://www.cesareox.com/docencia/apuntes/linux/)
-
-### Comandos Básicos Páginas Web de Apoyo
-
-- [Chuleta Comandos Linux](https://cheatography.com/crakernano/cheat-sheets/linux-shell/)
-- [Chuleta Comandos Linux 2](https://cheatography.com/grysbernkastel/cheat-sheets/comandos-linux/)
-- [CheatSheet - 400 comandos para GNU/Linux](https://www.blackploit.com/2013/05/cheatsheet-comandos-para-GNU-Linux.html)
-
-#### Páginas con Ejercicios Interactivos
-
-- [Webminal](https://www.webminal.org/terminal/)
-
-![](https://i.ibb.co/hsw0GDc/image.png)
-
-## DISCOS DUROS
-
-### Discos duros en Linux
-
-**¿Cómo se denomina a los discos duros IDE en Linux?**
-
-La nomenclatura cambia si se trata de un disco duro IDE o SATA
-
-#### Discos duros IDE
-
-ide0 = primario maestro = hda
-ide1 = primario esclavo = hdb
-
-#### Discos duros SATA
-
-Para dispositivos SCSI o discos SATA es similar a `/dev/sda` o `/dev/scdb`
-
-#### Más sobre discos duros
-
-- [Tipos de dispositivos](https://www.linuxtotal.com.mx/index.php?cont=info_admon_005)
-- [Unidades de disco en Linux: Particiones lógicas y primarias](http://www.estrellateyarde.org/archivos-y-directorios-en-linux/unidades-de-disco-en-linux)
-- [Particiones y sistemas de archivos en Linux](http://www.aquihayapuntes.com/particiones-y-sistemas-de-archivos-en-linux.html)
-
-#### Particiones de disco duro
-
-> **Fuente**: [Región de Murcia](http://www.carm.es/edu/pub/04_2015/2_5_2_contenido.html#:~:text=Partici%C3%B3n%20extendida.,en%20un%20solo%20disco%20f%C3%ADsico.)
-
-El **formato** o **sistema de archivo de una partición** (por ejemplo NTFS) no debe ser confundido con el **tipo de partición** (por ejemplo “partición primaria”), ya que en realidad no tienen directamente mucho que ver. A continuación se va a explicar cada término y sus características. [29]
-
-![img](https://i.ibb.co/7Y0nQWj/imagen-1.jpg)
-
-Independientemente del sistema de archivos de una partición (FAT, NTFS, ext3, ext4, etc.), si se habla de un disco duro que use **MBR, existen 3 tipos diferentes de particiones:** [32]
-
-**Partición primaria:** Son las divisiones primarias del disco. En un disco duro, pueden existir de una a cuatro particiones primarias o hasta tres primarias y una extendida. Depende de una **tabla de particiones.** Un disco duro físico completamente formateado (por ejemplo, una unidad de disco duro externa USB nueva) consiste, en realidad, en una partición primaria que ocupa todo el espacio del disco y posee un sistema de archivos. Prácticamente, cualquier sistema operativo puede detectar este tipo de particiones primarias, y asignarles una unidad, siempre y cuando el sistema operativo reconozca su **formato (sistema de archivos).**
-
-![img](https://i.ibb.co/ccs5RXt/imagen-2.jpg)
-
-Disco duro con una única partición primaria.
-
-![img](https://i.ibb.co/kQKDZKS/imagen-3.jpg)
-
-Disco duro con cuatro particiones primarias.
-
-La **partición primaria** puede ser reconocida como una partición de arranque y puede contener un sistema operativo que realice el arranque del equipo. Una de las particiones primarias se llama la **partición activa** y es la de **arranque**. El ordenador busca en esa **partición activa** el arranque del sistema. Cuando hay varios sistemas operativos instalados la partición activa tiene un pequeño programa llamado **gestor de arranque** que presenta un pequeño menú que permite elegir qué sistema operativo se arranca.
-
-![img](https://i.ibb.co/PNGqwXR/imagen-4.jpg)
-
-Gestor de arranque GRUB.
-
-**Partición extendida:** También conocida como partición secundaria, es otro tipo de partición que actúa como una partición primaria; sirve para contener múltiples unidades lógicas en su interior. Fue ideada para romper la limitación de 4 particiones primarias en un solo disco físico. Solo puede existir una partición de este tipo por disco, y solo sirve para contener particiones lógicas. Por lo tanto, es el único tipo de partición que no soporta un sistema de archivos directamente.
-
-![img](https://i.ibb.co/2Y34zQq/imagen-5.jpg)
-
-Disco duro con tres particiones primarias y una extendida.
-
-![img](https://i.ibb.co/4p2zyYF/imagen-6.jpg)
-
-Disco duro con tres particiones primarias y cuatro extendidas.
-
-**Partición lógica:** Ocupa una porción de la partición extendida o la totalidad de la misma, y se ha formateado con un tipo específico de sistema de archivos (FAT32, NTFS, ext3, ext4, etc.) y se le ha asignado una unidad, así el sistema operativo reconoce las particiones lógicas o su sistema de archivos. Se pueden tener un máximo de 23 particiones lógicas en una partición extendida. Aunque algunos sistemas operativos pueden ser más restrictivos, como Linux que impone un máximo de 15, incluyendo las 4 primarias, en discos SCSI y en discos IDE 8963.
-
-### Instalar GPARTED
-
-- [🎥 Tutorial de como instalar Gparted mediante Comandos](https://www.youtube.com/watch?v=83RdL3Bncwo&ab_channel=JairoAriza)
-
-- Menú de Mint > Gestor de Paquetes Synaptic > Buscar (buscar gparted) > Seleccionar los paquetes: gparted y gparted-common > Aplicar.
-- Buscar el programa GPARTED en el Menú.
-
-### Crear Particiones con GPARTED
-
-- [🎥 Particionar con Gparted Basico](https://www.youtube.com/watch?v=qTlr-ebZd44&ab_channel=ZodzLinux)
+- Fdisk (programa desde la consola).
+- Parted (programa desde la consola).
+- GParted (mediante interfaz gráfica).
 
 ## FDISK: Cómo crear particiones en Linux desde la consola
 
 - [🎥 Creación de particiones con fdisk](https://www.youtube.com/watch?v=r4EEYhfzGUk&ab_channel=JoseLuisCalvo)
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r4EEYhfzGUk" frameborder="0"> </iframe>
+
 - [🎥 Crear, Formatear y Montar Particiones con Comandos en Ubuntu](https://www.youtube.com/watch?v=-KNAe_7wwQ8&ab_channel=CarlosMeza)
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-KNAe_7wwQ8" frameborder="0"> </iframe>
 
 > **Fuente**: [Galisteo Cantero](https://www.galisteocantero.com/fdisk-como-crear-particiones-en-linux/)
 
@@ -151,7 +44,6 @@ Nos devolverá bastante información, así que busca bien tu disco. Una vez loca
 /dev/sda0
 /dev/sda1
 /dev/sda2
-...
 ```
 
 El disco duro es /dev/sda y el resto, son cada una de las particiones que tenga dicho disco, así que con fdisk, debemos trabajar con el disco duro y no con sus particiones.
@@ -309,6 +201,55 @@ Usando el comando `lsblk -f` o `df -h`
 ### Parte 5º: Desmontar una partición
 
 Simplemente debes utilizar el comando `unmount /mnt/NombreCarpeta`
+
+## Instalar GPARTED
+
+- [🎥 Tutorial de como instalar Gparted mediante Comandos](https://www.youtube.com/watch?v=83RdL3Bncwo&ab_channel=JairoAriza)
+
+- Menú de Mint > Gestor de Paquetes Synaptic > Buscar (buscar gparted) > Seleccionar los paquetes: gparted y gparted-common > Aplicar.
+- Buscar el programa GPARTED en el Menú.
+
+### Crear Particiones con GPARTED
+
+- [🎥 Particionar con Gparted Basico](https://www.youtube.com/watch?v=qTlr-ebZd44&ab_channel=ZodzLinux)
+
+## Tipos de Particiones de disco duro
+
+> **Fuente**: [Región de Murcia](http://www.carm.es/edu/pub/04_2015/2_5_2_contenido.html#:~:text=Partici%C3%B3n%20extendida.,en%20un%20solo%20disco%20f%C3%ADsico.)
+
+El **formato** o **sistema de archivo de una partición** (por ejemplo NTFS) no debe ser confundido con el **tipo de partición** (por ejemplo “partición primaria”), ya que en realidad no tienen directamente mucho que ver. A continuación se va a explicar cada término y sus características. [29]
+
+![img](https://i.ibb.co/7Y0nQWj/imagen-1.jpg)
+
+Independientemente del sistema de archivos de una partición (FAT, NTFS, ext3, ext4, etc.), si se habla de un disco duro que use **MBR, existen 3 tipos diferentes de particiones:** [32]
+
+**Partición primaria:** Son las divisiones primarias del disco. En un disco duro, pueden existir de una a cuatro particiones primarias o hasta tres primarias y una extendida. Depende de una **tabla de particiones.** Un disco duro físico completamente formateado (por ejemplo, una unidad de disco duro externa USB nueva) consiste, en realidad, en una partición primaria que ocupa todo el espacio del disco y posee un sistema de archivos. Prácticamente, cualquier sistema operativo puede detectar este tipo de particiones primarias, y asignarles una unidad, siempre y cuando el sistema operativo reconozca su **formato (sistema de archivos).**
+
+![img](https://i.ibb.co/ccs5RXt/imagen-2.jpg)
+
+Disco duro con una única partición primaria.
+
+![img](https://i.ibb.co/kQKDZKS/imagen-3.jpg)
+
+Disco duro con cuatro particiones primarias.
+
+La **partición primaria** puede ser reconocida como una partición de arranque y puede contener un sistema operativo que realice el arranque del equipo. Una de las particiones primarias se llama la **partición activa** y es la de **arranque**. El ordenador busca en esa **partición activa** el arranque del sistema. Cuando hay varios sistemas operativos instalados la partición activa tiene un pequeño programa llamado **gestor de arranque** que presenta un pequeño menú que permite elegir qué sistema operativo se arranca.
+
+![img](https://i.ibb.co/PNGqwXR/imagen-4.jpg)
+
+Gestor de arranque GRUB.
+
+**Partición extendida:** También conocida como partición secundaria, es otro tipo de partición que actúa como una partición primaria; sirve para contener múltiples unidades lógicas en su interior. Fue ideada para romper la limitación de 4 particiones primarias en un solo disco físico. Solo puede existir una partición de este tipo por disco, y solo sirve para contener particiones lógicas. Por lo tanto, es el único tipo de partición que no soporta un sistema de archivos directamente.
+
+![img](https://i.ibb.co/2Y34zQq/imagen-5.jpg)
+
+Disco duro con tres particiones primarias y una extendida.
+
+![img](https://i.ibb.co/4p2zyYF/imagen-6.jpg)
+
+Disco duro con tres particiones primarias y cuatro extendidas.
+
+**Partición lógica:** Ocupa una porción de la partición extendida o la totalidad de la misma, y se ha formateado con un tipo específico de sistema de archivos (FAT32, NTFS, ext3, ext4, etc.) y se le ha asignado una unidad, así el sistema operativo reconoce las particiones lógicas o su sistema de archivos. Se pueden tener un máximo de 23 particiones lógicas en una partición extendida. Aunque algunos sistemas operativos pueden ser más restrictivos, como Linux que impone un máximo de 15, incluyendo las 4 primarias, en discos SCSI y en discos IDE 8963.
 
 ### Relacionados
 

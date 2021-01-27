@@ -7,7 +7,7 @@ permalink: /maquinas-virtuales/
 
 ### VirtualBOX
 
-- [🎥 Agregar discos duros a maquinas virtuales | VirtualBox](https://www.youtube.com/watch?v=yJPdxCQ0PDU&ab_channel=tutorialesJJ)
+- [🎥 Agregar discos duros en Maquinas Virtuales de VirtualBox](https://www.youtube.com/watch?v=yJPdxCQ0PDU&ab_channel=tutorialesJJ)
 
 ### VMware Workstation
 
