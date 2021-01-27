@@ -2,7 +2,7 @@
 title: "Seguridad"
 toc: true
 toc_sticky: true
-url: /seguridad/
+permalink: /seguridad/
 layout: page
 ---
 
