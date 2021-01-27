@@ -1,7 +1,5 @@
 ---
 title: "Red"
-tags:
-  - table of contents
 toc: true
 toc_sticky: true
 url: /redes/

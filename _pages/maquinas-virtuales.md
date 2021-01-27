@@ -1,7 +1,5 @@
 ---
 title: "Máquinas Virtuales"
-tags:
-  - table of contents
 toc: true
 toc_sticky: true
 url: /maquinas-virtuales/

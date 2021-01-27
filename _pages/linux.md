@@ -1,7 +1,5 @@
 ---
 title: "Linux"
-tags:
-  - table of contents
 toc: true
 toc_sticky: true
 url: /linux/

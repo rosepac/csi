@@ -1,7 +1,5 @@
 ---
 title: "Seguridad"
-tags:
-  - table of contents
 toc: true
 toc_sticky: true
 url: /seguridad/
