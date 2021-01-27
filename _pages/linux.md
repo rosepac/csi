@@ -223,7 +223,7 @@ Puedes aprender más en nuestra [sección de Linux](https://www.galisteocantero.
 
 ## PARTED: Comandos
 
-> Por Juanjo y Ana 😹
+> Creado Por Juanjo y Ana 😹
 
 Particionado de un disco en formato GPT a través del programa PARTED.
 
@@ -234,6 +234,7 @@ Particionado de un disco en formato GPT a través del programa PARTED.
 `(parted)- mklabel gpt`
 
 #### 1ªPARTICIÓN
+
 (parted)- mkpart: poner nombre (Juanjo 1)
 Tipo de sistema de ficheros? ext4
 ¿Inicio? 1 ----ponemos donde empezara la 1ª partición
@@ -260,11 +261,12 @@ Tipo de sistema de ficheros? ext4
 ¿Inicio? 1101 - Fin de la 3ª y comienzo de la 4ª
 ¿fin? 100%: Se pone % para que sea todo el resto.
 
-###  Y así con todas las particiones que queramos hacer.
-(parted)- quit: para volver al modo root o `Cntrl+Z / Cntrl+C` para interrumpir el proceso.
-$ root@juanjo-virtual-machine:/home/juanjo# fdisk –l: para ver el listado de
+###  Y así con todas las particiones que queramos hacer
+
+`(parted)- quit`: para volver al modo root o `Cntrl+Z / Cntrl+C` para interrumpir el proceso.
+`$ root@juanjo-virtual-machine:/home/juanjo# fdisk –l`: para ver el listado de
 discos con sus particiones.
-root@juanjo-virtual-machine:/home/juanjo# lsblk –fm: para ver el formato
+`root@juanjo-virtual-machine:/home/juanjo# lsblk –fm`: para ver el formato
 de los discos con sus particiones.
 
 ### Enlaces Parted
@@ -283,12 +285,12 @@ Teniendo en cuenta de que ya hemos creado las particiones, debemos guardar el "n
 
 Debemos crear una carpeta en la ubicación para cada una de las particiones, dentro del lugar en el que las queramos montar. Existen dos posibilidades para hacer esto: 1. Movernos a la ruta en la queremos tener la carpeta, y crearla allí. 2. Crear la carpeta desde cualquier lugar en el que nos encontremos, marcando la ruta completa.
 
-#### Modo 1
+- Modo 1
 
 `cd /mnt/`
 `mkdir NombreCarpeta`
 
-#### Modo 2
+- Modo 2
 
 `mkdir /mnt/NombreCarpeta`
 
@@ -297,7 +299,7 @@ Debemos crear una carpeta en la ubicación para cada una de las particiones, den
 Utilizar el comando `mount -t` + formato dado a la partición `ext4` + ruta de la partición `/dev/sdbx` + ruta de montaje elegida `/mnt/NombreCarpeta`
 El comando completo sería:
 
-`mount -t ext4 /dev/sbdx /mnt/NombreCarpeta`
+```mount -t ext4 /dev/sbdx /mnt/NombreCarpeta```
 
 El comando debe de repetirse para cada partición y ruta.
 
