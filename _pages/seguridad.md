@@ -3,7 +3,7 @@ title: "Seguridad"
 toc: true
 toc_sticky: true
 permalink: /seguridad/
-layout: page
+layout: single
 ---
 
 "Stick" table of contents to the top of a page by adding `toc_sticky: true` to its YAML Front Matter.

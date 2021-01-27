@@ -3,7 +3,7 @@ title: "Red"
 toc: true
 toc_sticky: true
 permalink: /redes/
-layout: page
+layout: single
 ---
 
 ## Creación de ACLs

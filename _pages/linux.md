@@ -3,7 +3,7 @@ title: "Linux"
 toc: true
 toc_sticky: true
 permalink: /linux/
-layout: page
+layout: single
 ---
 
 ## LINUX, DISCOS DUROS, MÁQUINAS VIRTUALES 👀
