@@ -1,12 +1,12 @@
 # main links
 main:
-  # title: "Quick-Start Guide"
-  # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  title: "Redes"
-  url: /redes/
-  title: "Seguridad"
-  url: /seguridad/
-  title: "Linux"
-  url: /linux/
+  - title: "Redes"
+    url: /redes/
+  - title: "Seguridad"
+    url: /seguridad/
+  - title: "Linux"
+    url: /linux/
   # - title: "Sitemap"
   #   url: /sitemap/
+  # title: "Quick-Start Guide"
+  # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
