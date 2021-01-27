@@ -1,9 +1,8 @@
 ---
-title: "Linux"
+title: "Linux: Montaje de Particiones"
 toc: true
-toc_sticky: false
-permalink: /linux/
-layout: single
+toc_sticky: true
+permalink: /particionado/
 ---
 
 ## COMANDOS BÁSICOS DE LINUX
@@ -310,3 +309,8 @@ Usando el comando `lsblk -f` o `df -h`
 ### Parte 5º: Desmontar una partición
 
 Simplemente debes utilizar el comando `unmount /mnt/NombreCarpeta`
+
+### Relacionados
+
+- [Tipologías de Discos Durso en Linux](/discos-duros/)
+- [Particionar Discos Duros en Linux](/particionado/)

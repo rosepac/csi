@@ -3,7 +3,6 @@ title: "Máquinas Virtuales"
 toc: true
 toc_sticky: true
 permalink: /maquinas-virtuales/
-layout: single
 ---
 
 ### VirtualBOX
