@@ -40,6 +40,13 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Leer Más"
   - image_path: /assets/imagenes/plantilla/mm-free-feature.png
+    alt: "Montaje de Particiones"
+    title: "Montaje de Particiones"
+    excerpt: "Montaje de Particiones en el fichero fstab."
+    url: "/montaje-discos-linux/"
+    btn_class: "btn--primary"
+    btn_label: "Leer Más" 
+  - image_path: /assets/imagenes/plantilla/mm-free-feature.png
     alt: "Máquinas Virtuales"
     title: "Máquinas Virtuales"
     excerpt: "Como crear Máquinas Virtuales."
