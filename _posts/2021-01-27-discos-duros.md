@@ -30,5 +30,5 @@ Para dispositivos SCSI o discos SATA es similar a `/dev/sda` o `/dev/scdb`
 
 ### Relacionados
 
-- [Particionar Discos Duros en Linux](/particionado/)
-- [Comandos Básicos de Linux](/linux/)
+- [Particionar Discos Duros en Linux](/csi/particionado/)
+- [Comandos Básicos de Linux](/csi/linux/)

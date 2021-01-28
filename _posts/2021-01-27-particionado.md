@@ -15,11 +15,11 @@ A continuación, vamos a explicar 3 formas diferentes de crear particiones en un
 
 ## FDISK: Cómo crear particiones en Linux desde la consola
 
-- [🎥 Creación de particiones con fdisk](https://www.youtube.com/watch?v=r4EEYhfzGUk&ab_channel=JoseLuisCalvo)
+> *🎥 Creación de particiones con fdisk*](https://www.youtube.com/watch?v=r4EEYhfzGUk&ab_channel=JoseLuisCalvo)*
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r4EEYhfzGUk" frameborder="0"> </iframe>
 
-- [🎥 Crear, Formatear y Montar Particiones con Comandos en Ubuntu](https://www.youtube.com/watch?v=-KNAe_7wwQ8&ab_channel=CarlosMeza)
+> *🎥 Crear, Formatear y Montar Particiones con Comandos en Ubuntu*
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-KNAe_7wwQ8" frameborder="0"> </iframe>
 
@@ -124,28 +124,28 @@ Particionado de un disco en formato GPT a través del programa PARTED.
 - `$ parted /dev/sdd`: para entrar en el disco que quiero hacer las particiones
 - `(parted)- mklabel gpt`
 
-#### 1 PARTICIÓN
+### Primera Partición
 
 - (parted)- mkpart: poner nombre (Juanjo 1)
 - Tipo de sistema de ficheros? ext4
 - ¿Inicio? 1 ----ponemos donde empezara la 1ª partición
 - ¿fin? 301
 
-### 2 PARTICIÓN
+### Segunda Partición
 
 - (parted)- mkpart: poner nombre (Juanjo 2)
 - Tipo de sistema de ficheros? ext4
 - ¿Inicio? 301 –Es el fin de la 1ª y comienzo de la 2ª
 - ¿fin? 501
 
-### 3 PARTICIÓN
+### Tercera Partición
 
 - (parted)- mkpart: poner nombre (Juanjo 3)
 - Tipo de sistema de ficheros? ext4
 - ¿Inicio? 501 –Es el fin de la 2ª y el inicio del la 3ª
 - ¿fin? 1101
 
-### 4 PARTICIÓN
+### Cuarta Partición
 
 - (parted)- mkpart: poner nombre (Juanjo 4)
 - Tipo de sistema de ficheros? ext4
@@ -160,7 +160,9 @@ discos con sus particiones.
 - `root@juanjo-virtual-machine:/home/juanjo# lsblk –fm`: para ver el formato
 de los discos con sus particiones.
 
-### Enlaces Parted
+### Relacionados Parted
+
+¿Cómo administrar particiones con GNU Parted? 👇
 
 - [Administrar particiones con GNU Parted](https://www.sololinux.es/administrar-particiones-con-gnu-parted/)
 
@@ -253,5 +255,5 @@ Disco duro con tres particiones primarias y cuatro extendidas.
 
 ### Relacionados
 
-- [Tipologías de Discos Durso en Linux](/discos-duros/)
-- [Particionar Discos Duros en Linux](/particionado/)
+- [Tipologías de Discos Durso en Linux](/csi/discos-duros/)
+- [Particionar Discos Duros en Linux](/csi/particionado/)
