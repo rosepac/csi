@@ -1,7 +1,7 @@
 ---
 title: "Linux: Montaje de Particiones"
 toc: true
-toc_sticky: true
+toc_sticky: false
 permalink: /particionado/
 ---
 
@@ -15,13 +15,15 @@ A continuación, vamos a explicar 3 formas diferentes de crear particiones en un
 
 ## FDISK: Cómo crear particiones en Linux desde la consola
 
-> *🎥 Creación de particiones con fdisk*](https://www.youtube.com/watch?v=r4EEYhfzGUk&ab_channel=JoseLuisCalvo)*
-
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/r4EEYhfzGUk" frameborder="0"> </iframe>
+
+> *🎥 Creación de particiones con fdisk*
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-KNAe_7wwQ8" frameborder="0"> </iframe>
 
 > *🎥 Crear, Formatear y Montar Particiones con Comandos en Ubuntu*
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-KNAe_7wwQ8" frameborder="0"> </iframe>
+## El uso de Fdisk: Paso a Paso
 
 > **Fuente**: [Galisteo Cantero](https://www.galisteocantero.com/fdisk-como-crear-particiones-en-linux/)
 
@@ -126,29 +128,29 @@ Particionado de un disco en formato GPT a través del programa PARTED.
 
 ### Primera Partición
 
-- (parted)- mkpart: poner nombre (Juanjo 1)
+- `(parted)- mkpart`: poner nombre (Juanjo 1)
 - Tipo de sistema de ficheros? ext4
 - ¿Inicio? 1 ----ponemos donde empezara la 1ª partición
 - ¿fin? 301
 
 ### Segunda Partición
 
-- (parted)- mkpart: poner nombre (Juanjo 2)
+- `(parted)- mkpart`: poner nombre (Juanjo 2)
 - Tipo de sistema de ficheros? ext4
 - ¿Inicio? 301 –Es el fin de la 1ª y comienzo de la 2ª
 - ¿fin? 501
 
 ### Tercera Partición
 
-- (parted)- mkpart: poner nombre (Juanjo 3)
+- `(parted)- mkpart`: poner nombre (Juanjo 3)
 - Tipo de sistema de ficheros? ext4
 - ¿Inicio? 501 –Es el fin de la 2ª y el inicio del la 3ª
 - ¿fin? 1101
 
 ### Cuarta Partición
 
-- (parted)- mkpart: poner nombre (Juanjo 4)
-- Tipo de sistema de ficheros? ext4
+- `(parted)- mkpart`: poner nombre (Juanjo 4)
+- Tipo de sistema de ficheros? `ext4`
 - ¿Inicio? 1101 - Fin de la 3ª y comienzo de la 4ª
 - ¿fin? 100%: Se pone % para que sea todo el resto.
 
@@ -162,9 +164,7 @@ de los discos con sus particiones.
 
 ### Relacionados Parted
 
-¿Cómo administrar particiones con GNU Parted? 👇
-
-- [Administrar particiones con GNU Parted](https://www.sololinux.es/administrar-particiones-con-gnu-parted/)
+¿Cómo administrar particiones con GNU Parted? 👉 [Administrar particiones con GNU Parted](https://www.sololinux.es/administrar-particiones-con-gnu-parted/)
 
 ## Montar Particiones
 
@@ -206,14 +206,18 @@ Simplemente debes utilizar el comando `unmount /mnt/NombreCarpeta`
 
 ## Instalar GPARTED
 
-- [🎥 Tutorial de como instalar Gparted mediante Comandos](https://www.youtube.com/watch?v=83RdL3Bncwo&ab_channel=JairoAriza)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/83RdL3Bncwo" frameborder="0"> </iframe>
+
+> *🎥 Tutorial de como instalar Gparted mediante Comandos*
 
 - Menú de Mint > Gestor de Paquetes Synaptic > Buscar (buscar gparted) > Seleccionar los paquetes: gparted y gparted-common > Aplicar.
 - Buscar el programa GPARTED en el Menú.
 
 ### Crear Particiones con GPARTED
 
-- [🎥 Particionar con Gparted Basico](https://www.youtube.com/watch?v=qTlr-ebZd44&ab_channel=ZodzLinux)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qTlr-ebZd44" frameborder="0"> </iframe>
+
+> *🎥 Particionar con Gparted Basico*
 
 ## Tipos de Particiones de disco duro
 

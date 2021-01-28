@@ -5,10 +5,14 @@ toc_sticky: true
 permalink: /maquinas-virtuales/
 ---
 
-### VirtualBOX
+## VirtualBOX
 
-- [🎥 Agregar discos duros en Maquinas Virtuales de VirtualBox](https://www.youtube.com/watch?v=yJPdxCQ0PDU&ab_channel=tutorialesJJ)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yJPdxCQ0PDU" frameborder="0"> </iframe>
 
-### VMware Workstation
+> *🎥 Agregar discos duros en Maquinas Virtuales de VirtualBox*
 
-- [🎥 VMWare Agregar disco duro virtual en caliente](https://www.youtube.com/watch?v=QRen1rZ8Hq0&ab_channel=JGAITPro)
+## VMware Workstation
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QRen1rZ8Hq0" frameborder="0"> </iframe>
+
+> *🎥 VMWare Agregar disco duro virtual en caliente*
