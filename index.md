@@ -14,7 +14,7 @@ feature_row:
   - image_path: /assets/imagenes/plantilla/mm-customizable-feature.png
     alt: "redes"
     title: "Redes"
-    excerpt: "Contenidos de Redes: Cisco, Packet, Tracer, Acl´s. Etc.."
+    excerpt: "Redes, Cisco, Packet, Tracer, Acl´s. Etc.."
     url: "/redes/"
     btn_class: "btn--primary"
     btn_label: "Leer Más"
