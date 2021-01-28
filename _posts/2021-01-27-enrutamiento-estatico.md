@@ -29,6 +29,8 @@ permalink: /enrutamiento-estatico/
 > - Mask: 255.255.255.0
 > - Next Hop: 192.168.2.2
 
+![](https://i.ibb.co/Y2VvChh/28-1-enrutamiento.jpg)
+
 - **6.** Comprobar que cada red se vea entre sí.
 				Comenzando por comprobar: Desde las redes que estén más cercanas, a las más lejanas.
 				Esto nos debería ayudar a identificar posibles problemas.. 👀
