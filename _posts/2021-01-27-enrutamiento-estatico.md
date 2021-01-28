@@ -20,8 +20,15 @@ permalink: /enrutamiento-estatico/
 - **5.** Enrutamiento estático..
 	- **5.1.** Cada router debe llevar una orden para el resto de redes que contengan hosts / PC.
 	- **5.2.** Configuración: Network (red a la que quiero llegar 192.168.x.0).
-      					Next Hop: IP del primer puerto del siguiente Router de hacía el lugar hacía donde quiero llegar.
-	  					Mask (máscara, por defecto, en principio 255.255.255.0).
+      		- Next Hop: IP del primer puerto del siguiente Router de hacía el lugar hacía donde quiero llegar.
+	  		- Mask (máscara, por defecto, en principio 255.255.255.0).
+
+> Ejemplo:
+> 
+> - Network: 192.168.5.0
+> - Mask: 255.255.255.0
+> - Next Hop: 192.168.2.2
+
 - **6.** Comprobar que cada red se vea entre sí.
 				Comenzando por comprobar: Desde las redes que estén más cercanas, a las más lejanas.
 				Esto nos debería ayudar a identificar posibles problemas.. 👀
