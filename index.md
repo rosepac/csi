@@ -19,12 +19,12 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Leer Más"
   - image_path: /assets/imagenes/plantilla/mm-free-feature.png
-    alt: "Seguridad"
-    title: "Seguridad"
-    excerpt: "Apartado dedicado a la Seguridad 🚧"
-    url: "/seguridad/"
+    alt: "Enrutamiento Estático"
+    title: "Enrutamiento Estático"
+    excerpt: "Como crear Enrutamiento Estático."
+    url: "/enrutamiento-estatico/"
     btn_class: "btn--primary"
-    btn_label: "Leer Más"
+    btn_label: "Leer Más"  
   - image_path: /assets/imagenes/plantilla/mm-customizable-feature.png
     alt: "Discos Duros"
     title: "Discos Duros"
@@ -52,7 +52,14 @@ feature_row:
     excerpt: "Como crear Máquinas Virtuales."
     url: "/maquinas-virtuales/"
     btn_class: "btn--primary"
-    btn_label: "Leer Más"  
+    btn_label: "Leer Más"
+  - image_path: /assets/imagenes/plantilla/mm-free-feature.png
+    alt: "Seguridad"
+    title: "Seguridad"
+    excerpt: "Apartado dedicado a la Seguridad 🚧"
+    url: "/seguridad/"
+    btn_class: "btn--primary"
+    btn_label: "Leer Más"
 
 ---
 
